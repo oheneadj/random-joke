@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Joke</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        padding-top: 20vh;
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        display: flex;
+        min-width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(208, 225, 241);
+      }
+
+      h3,
+      p {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 100px 10px;
+      }
+
+      button {
+        background-color: dodgerblue;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: rgb(7, 128, 248);
+      }
+      .d-none {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Joke Generator</h1>
+    <div class="card">
+      <h3 id="setup" class="d-none">The Joke Goes Here</h3>
+      <p id="punchline" class="d-none">The PunchLine Goes Here</p>
+      <button id="genBtn" class="genBtn">Get Random Joke</button>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
